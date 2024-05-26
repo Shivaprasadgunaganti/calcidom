@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fb{
+            height: 70vh;
+            width: 42vw;
+            /* border: 2px solid rgb(161, 49, 49); */
+            display: flex;
+            flex-wrap: wrap;
+           
+            gap: 2px 3px;
+        }
+        .main{
+            height: 10vh;
+            width: 39vw;
+            background-color: rgb(29, 136, 136);
+            padding:10px;
+            font-size: xx-large;
+        } 
+        .design{
+            border-radius: 100px;
+        }
+        .number{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .symbol1{
+            height: 9vh;
+            width: 10vw;
+            /* border: 2px solid rgb(174, 174, 191); */
+            
+            background-color: rgb(228, 233, 234);
+        }
+        .symbol2{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(228, 233, 234);
+            
+        }
+        .symbol3{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(228, 233, 234);
+            font-size: x-large;
+        }
+        .symbol4{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(239, 152, 13);
+            font-size: xx-large;
+        }
+        .symbol5{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(44, 40, 40);
+    
+        }
+        .font{
+            color:white;
+            font-size: x-large;
+        }
+        .one1{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(44, 40, 40);
+        }
+        .one2{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(44, 40, 40);
+        }
+        .one3{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(239, 152, 13);
+            font-size: xx-large;
+        }
+        .one4{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(44, 40, 40);
+        }
+        .one5{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(44, 40, 40);
+        }
+        .one6{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(44, 40, 40);
+        }
+        .one7{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(239, 152, 13);
+            font-size: xx-large;
+        }
+        .one8{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(44, 40, 40);
+        }
+        .one9{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(44, 40, 40);
+        }
+        .one10{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(44, 40, 40);
+        }
+        .one11{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(239, 152, 13);
+            font-size: xx-large;
+        }
+        .one12{
+            height: 9vh;
+            width: 20vw;
+            background-color: rgb(44, 40, 40);
+        }
+        .one13{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(44, 40, 40);
+        }
+        .one14{
+            height: 9vh;
+            width: 10vw;
+            background-color: rgb(239, 152, 13);
+            font-size: xx-large;
+         } 
+         .size{
+            font-size: xx-large;
+         }
+         
+    </style>
+</head>
+<body>
+    <div class="fb">
+        <input class="main size screen" type="text" value="">
+    
+             <button class="symbol1 design number ac">AC</button>
+             <button class="symbol2 design number clear">CLEAR</button>
+             <button class="symbol3 design number %">%</button>
+             <button class="symbol4 design number /">/</button>
+
+            
+             <button class="symbol5 design font seven">7</button>
+             <button class="one1 design number font eight">8</button>
+             <button class="one2 design number font nine">9</button>
+             <button class="one3 design number font *">*</button>
+
+             <button class="one4 design number font four">4</button>
+             <button class="one5 design number font five">5</button>
+             <button class="one6 design number font six">6</button>
+             <button class="one7 design number sub">-</button>
+
+            <button class="one8 design number font one">1</button>
+            <button class="one9 design number font two">2</button>
+            <button class="one10 design number font three">3</button>    
+            <button class="one11 design number font add">+</button>
+            
+            <button class="one12 design number font zero">0</button>
+            <button class="one13 design number font dot">.</button>
+            <button class="one14 design number font equal">=</button>
+                
+    </div>
+     <script>
+    
+
+        let screen=document.getElementsByClassName("screen")[0]
+        screen.style.color="wheat"
+    
+        let ac=document.getElementsByClassName("ac")[0]
+        ac.addEventListener("click",()=>{
+            screen.value=innerHTML=""
+        })
+
+        let clear=document.getElementsByClassName("clear")[0]
+        clear.addEventListener("click",()=>{
+            screen.value=screen.value.slice(0,-1)
+        })
+
+        let percent=document.getElementsByClassName("%")[0]
+    
+        percent.addEventListener("click",()=>{
+            screen.value+=percent.innerHTML
+        })
+
+        let divide=document.getElementsByClassName("/")[0]
+    
+        divide.addEventListener("click",()=>{
+            screen.value+=divide.innerHTML
+        })
+
+        let seven=document.getElementsByClassName("seven")[0]
+    
+        seven.addEventListener("click",()=>{
+            screen.value+=seven.innerHTML
+        })
+        
+        
+        let eight=document.getElementsByClassName("eight")[0]
+        eight.addEventListener("click",()=>{
+            screen.value+=eight.innerHTML
+        })
+
+        let nine=document.getElementsByClassName("nine")[0]
+        nine.addEventListener("click",()=>{
+            screen.value+=nine.innerHTML
+        })
+
+        let star=document.getElementsByClassName("*")[0]
+        star.addEventListener("click",()=>{
+            screen.value+=star.innerHTML
+        })
+
+        let four=document.getElementsByClassName("four")[0]
+        four.addEventListener("click",()=>{
+            screen.value+=four.innerHTML
+        })
+
+        let five=document.getElementsByClassName("five")[0]
+        five.addEventListener("click",()=>{
+            screen.value+=five.innerHTML
+        })
+
+        let six=document.getElementsByClassName("six")[0]
+        six.addEventListener("click",()=>{
+            screen.value+=six.innerHTML
+        })
+
+        let sub=document.getElementsByClassName("sub")[0]
+        sub.addEventListener("click",()=>{
+            screen.value+=sub.innerHTML
+        })
+
+        let one=document.getElementsByClassName("one")[0]
+        one.addEventListener("click",()=>{
+            screen.value+=one.innerHTML
+        })
+
+        let two=document.getElementsByClassName("two")[0]
+        two.addEventListener("click",()=>{
+            screen.value+=two.innerHTML
+        })
+
+        let three=document.getElementsByClassName("three")[0]
+        three.addEventListener("click",()=>{
+        
+            screen.value+=three.innerHTML
+        })
+
+        let add=document.getElementsByClassName("add")[0]
+        add.addEventListener("click",()=>{
+                  
+            screen.value+=add.innerHTML
+        })
+
+        let zero=document.getElementsByClassName("zero")[0]
+        zero.addEventListener("click",()=>{
+            screen.value+=zero.innerHTML
+        })
+
+        let dot=document.getElementsByClassName("dot")[0]
+        dot.addEventListener("click",()=>{
+            screen.value+=dot.innerHTML
+        })
+
+        let equal=document.getElementsByClassName("equal")[0]
+        equal.addEventListener("click",()=>{
+            screen.value=eval(screen.value)
+        })
+
+     </script>
+</body>
+</html>
